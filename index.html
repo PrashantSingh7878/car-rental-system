@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,85 @@
     <title>Car Rental System</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="main-container">
-        <div class="nav-bar">
-            <nav>
-                <li>Home</li>
-                <li>Login</li>
-                <li>Signup</li>
-                <li>Contact Us</li>
-            </nav>
+        <div class="nav-bar-container">
+            <div class="nav-logo">
+                <img src="/images/car-rental-logo.jpg" alt="logo">
+            </div>
+
+            <div class="nav-menu-items">
+                <nav>
+                    <li>Signup</li>
+                    <li>Login</li>
+                    <li>Manage Booking</li>
+                    <li>Popular Locations</li>
+                </nav>
+            </div>
+        </div>
+
+        <div class="banner-section">
+            <h1>Car Hire - Search, Compare & Save</h1>
+            <div class="banner-img">
+                <img src="/images/banner-img.jpg" alt="">
+            </div>
+
+        </div>
+
+        <div class="more-info-section">
+            <div class="left-section">
+                <h1>Let's find your ideal car</h1>
+                <div class="car-details">
+
+                    <!-- Location Details -->
+                    <div class="location-details">
+                        <label for="locations">Picup Location: </label>
+                        <select name="locations" id="locations">
+                            <option>Select a Location</option>
+                            <option value="bbsr">Bhubaneswar</option>
+                            <option value="ndl">New Delhi</option>
+                        </select>
+                    </div>
+
+                    <!-- Pickup Date Details -->
+                    <div class="picup-date-details">
+                        <label for="picup-date">Picup Date: </label>
+                        <input type="date" name="picup-date" id="picup-date">
+                    </div>
+
+                    <!-- Drop Off Date Details -->
+                    <div class="drop-off-date-details">
+                        <label for="drop-off-date">Drop Off Date: </label>
+                        <input type="date" name="drop-off-date" id="drop-off-date">
+                    </div>
+
+                    <!-- Purpose Of Rental Details -->
+                    <div class="purpose-of-rental-details">
+                        <label for="purpose-of-rental">Purpose of Rental: </label>
+
+                        <input type="radio" name="purpose-of-rental" id="business" value="Business">
+                        <label for="html">Business</label>
+
+                        <input type="radio" name="purpose-of-rental" id="rental" value="rental">
+                        <label for="html">Rental</label><br>
+                    </div>
+                    <div class="search-button">
+                        <button type="submit">Search</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right-section">
+                <h1>Our Most Popular Destinations</h1>
+                <div class="popular-destinations">
+                    <span>Bangalore</span>
+                    <span>Noida</span>
+                    <span>Bhubaneswar</span>
+                    <span>New Delhi</span>
+                </div>
+            </div>
         </div>
     </div>
 </body>
+
 </html>
