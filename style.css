@@ -305,7 +305,7 @@ body {
 /* @media screen and (max-width: 975px) and (min-width: 817px) { */
 @media screen and (max-width: 1197px) {
     body{
-        background: #000;
+        /* background: #000; */
     }
 
     
