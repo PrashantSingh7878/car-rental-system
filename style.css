@@ -101,6 +101,7 @@ body {
 .banner-section .banner-img img {
     margin: 25px 0 20px 0;
     height: 400px;
+    width: 900px;
     max-width: 100%;
 }
 
@@ -112,7 +113,6 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
 }
 
 .more-info-section .left-section {
@@ -142,6 +142,7 @@ body {
     border: 3px solid #ffffff;
     padding: 30px;
 }
+
 .car-details .location-details, .picup-date-details, .drop-off-date-details, .purpose-of-rental-details {
     /* margin: 0 0 0 30px; */
     display: flex;
@@ -253,6 +254,13 @@ body {
     font-weight: 900;
 }
 
+.search-button button:hover {
+    cursor: pointer;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: 700;
+}
+
 .more-info-section .right-section {
     height: 500px;
     width: 50vw;
@@ -332,7 +340,7 @@ body {
 
 @media screen and (max-width: 975px) {
     body{
-        background: #000;
+        /* background: #000; */
     }
 
     .nav-bar-container {
@@ -377,11 +385,30 @@ body {
         justify-content: space-evenly;
         align-items: flex-start;
     }
+
+    .nav-bar-container .nav-logo img {
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: 685px) {
     .nav-bar-container .nav-menu-items nav li {
         font-size: 1.5rem; 
+    }
+
+    .nav-bar-container .nav-logo img {
+        margin-left: 0;
+        width: 10vw;
+    }
+}
+
+@media screen and (max-width: 585px) {
+    .nav-bar-container .nav-menu-items nav li {
+        font-size: 1.3rem; 
+    }
+
+    .nav-bar-container .nav-logo img {
+        margin-left: 0;
     }
 }
 
