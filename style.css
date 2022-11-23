@@ -12,13 +12,14 @@ html {
 
 body {
     height: 100vh;
+    background-color: #b6bdbd;
 }
 
 .main-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 8vw 0 8vw;
+    margin: 0 3vw 0 3vw;
 }
 
 .nav-bar-container {
@@ -72,12 +73,16 @@ body {
 
 .nav-menu-items nav li:hover {
     cursor: pointer;
+    border-bottom: 2px solid #0fe7c3;
+}
+/* .nav-menu-items nav li:hover {
+    cursor: pointer;
     background-color: #ffffff;
     color: #000000;
     border: 2px solid #fc00b0;
     border-radius: 15px;
     padding: 6px 12px;
-}
+} */
 
 .banner-section {
     height: auto;
