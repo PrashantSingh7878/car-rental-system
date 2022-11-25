@@ -37,6 +37,7 @@ html {
     width: 100%;
     background-color: #35e269;
     background:linear-gradient(2deg, #5ae7f1, #473b91);
+    position: relative;
 }
 
 
@@ -49,6 +50,7 @@ html {
     width: 100%;
     flex-wrap: wrap;
     background-color: #000000;
+    position: relative;
 }
 
 .nav-bar-container .nav-logo img {
@@ -96,6 +98,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: absolute;
 }
 
 .signup-form form .form-header h1 {
