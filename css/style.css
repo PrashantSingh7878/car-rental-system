@@ -12,13 +12,20 @@ html {
 
 body {
     height: 100vh;
+    background-color: #b6bdbd;
 }
 
 .main-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 8vw 0 8vw;
+    margin: 0 3vw 0 3vw;
+}
+
+.nav-menu-toggler {
+    display: none;
+    color: #ffffff;
+    font-size: 30px;
 }
 
 .nav-bar-container {
@@ -32,6 +39,7 @@ body {
     flex-wrap: wrap;
     /* background-color: #0aade9; */
     background-color: #000000;
+    /* background-color: #fff; */
     /* overflow-y: hidden; */
     /* padding: 0 0 0 10px; */
 }
@@ -66,18 +74,27 @@ body {
     color: #ffffff;
 }
 
+.nav-menu-items nav li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .nav-menu-items nav li:nth-child(4){
     margin-right: 0;
 }
 
 .nav-menu-items nav li:hover {
     cursor: pointer;
+    border-bottom: 2px solid #0fe7c3;
+}
+/* .nav-menu-items nav li:hover {
+    cursor: pointer;
     background-color: #ffffff;
     color: #000000;
     border: 2px solid #fc00b0;
     border-radius: 15px;
     padding: 6px 12px;
-}
+} */
 
 .banner-section {
     height: auto;
@@ -101,6 +118,7 @@ body {
 .banner-section .banner-img img {
     margin: 25px 0 20px 0;
     height: 400px;
+    width: 900px;
     max-width: 100%;
 }
 
@@ -112,7 +130,6 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
 }
 
 .more-info-section .left-section {
@@ -142,6 +159,7 @@ body {
     border: 3px solid #ffffff;
     padding: 30px;
 }
+
 .car-details .location-details, .picup-date-details, .drop-off-date-details, .purpose-of-rental-details {
     /* margin: 0 0 0 30px; */
     display: flex;
@@ -253,6 +271,13 @@ body {
     font-weight: 900;
 }
 
+.search-button button:hover {
+    cursor: pointer;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: 700;
+}
+
 .more-info-section .right-section {
     height: 500px;
     width: 50vw;
@@ -294,10 +319,10 @@ body {
     background-color: #0af02c;
 }
 
-@media screen and (max-width: 975px) and (min-width: 817px) {
+/* @media screen and (max-width: 975px) and (min-width: 817px) { */
 @media screen and (max-width: 1197px) {
     body{
-        background: #000;
+        /* background: #000; */
     }
 
     
@@ -332,11 +357,11 @@ body {
 
 @media screen and (max-width: 975px) {
     body{
-        background: #000;
+        /* background: #000; */
     }
 
     .nav-bar-container {
-        height: 140px;
+        height: 100px;
     }
 
     .more-info-section {
@@ -376,12 +401,136 @@ body {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: flex-start;
+        height: 111px;
     }
+
+    .nav-bar-container .nav-logo img {
+        margin-left: 10px;
+    }
+    .nav-bar-container .nav-menu-items nav {
+        margin-left: 10px;
+    }
+
+    
 }
 
 @media screen and (max-width: 685px) {
     .nav-bar-container .nav-menu-items nav li {
         font-size: 1.5rem; 
     }
+
+    .nav-bar-container .nav-menu-items nav {
+        margin-left: 10px;
+    }
+
+    .nav-bar-container .nav-logo img {
+        margin-left: 10px;
+        width: 15vw;
+    }
+
+    .nav-bar-container {
+        height: 100px;
+    }
 }
+
+/* @media screen and (max-width: 585px) { */
+@media screen and (max-width: 596px) {
+    .nav-bar-container .nav-menu-items nav li {
+        font-size: 1.3rem; 
+    }
+
+    .nav-bar-container .nav-logo img {
+        margin-left: 10px;
+        width: 15vw;
+    }
+
+    .nav-bar-container .nav-menu-items nav {
+        margin-left: 10px;
+    }
 }
+
+@media screen and (max-width: 537px) {
+
+    /* .nav-bar-container {
+        flex-wrap: nowrap;
+    } */
+    .nav-bar-container .nav-menu-items {
+        display: none;
+    }
+
+    .nav-bar-container .nav-logo img {
+        width: 82px;
+    }
+
+    .nav-bar-container {
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 482px) {
+    .banner-section h1 {
+        font-size: 16px;
+    }
+
+    .more-info-section .left-section h1 {
+        font-size: 18px;
+    }
+
+    .car-details {
+        margin: 20px 0 0 0;
+        padding: 0;
+    }
+    .car-details label {
+        font-size: 12px;
+        margin-left: 3px;
+    }
+
+    .car-details .location-details {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    .car-details .picup-date-details {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+    .car-details .drop-off-date-details {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+    .car-details .purpose-of-rental-details {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    .car-details select {
+        width: 164px;
+    }
+
+    .car-details input[type=date] {
+        width: 150px;
+    }
+
+    .rental-options {
+        width: 144px;
+    }
+
+    .car-details .search-button {
+        margin-bottom: 25px;
+    }
+
+    .more-info-section .right-section h1 {
+        font-size: 18px;
+        text-decoration: underline red;
+    }
+
+    .more-info-section .right-section .popular-destinations span {
+        font-size: 15px;
+    }
+}
+
+
