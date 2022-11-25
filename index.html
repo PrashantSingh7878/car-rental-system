@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Rental System</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <script src="https://kit.fontawesome.com/7d69da8a22.js" crossorigin="anonymous"></script> -->
+    
 </head>
 
 <body>
@@ -18,12 +21,17 @@
 
             <div class="nav-menu-items">
                 <nav>
-                    <li>Signup</li>
-                    <li>Login</li>
+                    <li><a href="/signup.html">Signup</a></li>
+                    <li><a href="/login.html">Login</a></li>
                     <li>Manage Booking</li>
                     <li>Popular Locations</li>
                 </nav>
             </div>
+
+            <div class="nav-toggler nav-menu-toggler">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            
         </div>
 
         <div class="banner-section">
@@ -38,50 +46,49 @@
             <div class="left-section">
                 <h1>Let's find your ideal car</h1>
                 <div class="car-details">
-
-                    <!-- Location Details -->
-                    <div class="location-details">
-                        <label for="locations">Picup Location: </label>
-                        <select name="locations" id="locations">
-                            <option>Select a Location</option>
-                            <option value="bbsr">Bhubaneswar</option>
-                            <option value="ndl">New Delhi</option>
-                        </select>
-                    </div>
-
-                    <!-- Pickup Date Details -->
-                    <div class="picup-date-details">
-                        <label for="picup-date">Picup Date: </label>
-                        <input type="date" name="picup-date" id="picup-date">
-                    </div>
-
-                    <!-- Drop Off Date Details -->
-                    <div class="drop-off-date-details">
-                        <label for="drop-off-date">Drop Off Date: </label>
-                        <input type="date" name="drop-off-date" id="drop-off-date">
-                    </div>
-
-                    <!-- Purpose Of Rental Details -->
-                    <div class="purpose-of-rental-details">
-                        <label for="purpose-of-rental">Purpose of Rental: </label>
-
-                        <div class="rental-options">
-                            <div class="first-option">
-                                <input type="radio" name="purpose-of-rental" id="business" value="Business">
-                                <label for="html">Business</label>
-                            </div>
-
-                            <div class="second-option">
-                                <input type="radio" name="purpose-of-rental" id="rental" value="rental">
-                                <label for="html">Rental</label><br>
-                            </div>
-
+                    <form action="#">
+                        <!-- Location Details -->
+                        <div class="location-details">
+                            <label for="locations">Picup Location: </label>
+                            <select name="locations" id="locations">
+                                <option>Select a Location</option>
+                                <option value="bbsr">Bhubaneswar</option>
+                                <option value="ndl">New Delhi</option>
+                            </select>
                         </div>
 
-                    </div>
-                    <div class="search-button">
-                        <button type="submit">Search</button>
-                    </div>
+                        <!-- Pickup Date Details -->
+                        <div class="picup-date-details">
+                            <label for="picup-date">Picup Date: </label>
+                            <input type="date" name="picup-date" id="picup-date">
+                        </div>
+
+                        <!-- Drop Off Date Details -->
+                        <div class="drop-off-date-details">
+                            <label for="drop-off-date">Drop Off Date: </label>
+                            <input type="date" name="drop-off-date" id="drop-off-date">
+                        </div>
+
+                        <!-- Purpose Of Rental Details -->
+                        <div class="purpose-of-rental-details">
+                            <label for="purpose-of-rental">Purpose of Rental: </label>
+
+                            <div class="rental-options">
+                                <div class="first-option">
+                                    <input type="radio" name="purpose-of-rental" id="business" value="Business">
+                                    <label for="html">Business</label>
+                                </div>
+
+                                <div class="second-option">
+                                    <input type="radio" name="purpose-of-rental" id="rental" value="rental">
+                                    <label for="html">Rental</label><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-button">
+                            <button type="submit">Search</button>
+                        </div>
+                    </form>
                 </div>
             </div>
             <div class="right-section">
