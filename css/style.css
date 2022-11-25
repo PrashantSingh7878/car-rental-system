@@ -294,7 +294,7 @@ body {
     background-color: #0af02c;
 }
 
-/* @media screen and (max-width: 975px) and (min-width: 817px) {
+@media screen and (max-width: 975px) and (min-width: 817px) {
 @media screen and (max-width: 1197px) {
     body{
         background: #000;
@@ -383,4 +383,5 @@ body {
     .nav-bar-container .nav-menu-items nav li {
         font-size: 1.5rem; 
     }
-} */
+}
+}
