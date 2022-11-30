@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Fira+Sans:wght@400;600&family=Montserrat:ital,wght@0,400;0,700;1,800&family=Poppins:wght@400;500;700;900&family=Righteous&family=Roboto:ital,wght@0,500;0,700;0,900;1,400;1,900&family=Source+Code+Pro:wght@300;600;700&display=swap');
 
+/* --------------------------------------- */
+/* -------------- CSS Reset -------------- */
+/* --------------------------------------- */
+
 * {
     margin: 0;
     padding: 0;
@@ -15,12 +19,20 @@ body {
     background-color: #b6bdbd;
 }
 
+/* ---------------------------------------------------- */
+/* -------------- Main Conatiner Styling -------------- */
+/* ---------------------------------------------------- */
+
 .main-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 3vw 0 3vw;
 }
+
+/* ---------------------------------------------------------------- */
+/* -------------- NavBar Section Styling Starts Here -------------- */
+/* ---------------------------------------------------------------- */
 
 .nav-menu-toggler {
     display: none;
@@ -96,10 +108,20 @@ body {
     padding: 6px 12px;
 } */
 
+/* -------------------------------------------------------------- */
+/* -------------- NavBar Section Styling Ends Here -------------- */
+/* -------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------- */
+/* -------------- Banner Section Styling Starts Here -------------- */
+/* ---------------------------------------------------------------- */
 .banner-section {
     height: auto;
     width: 100%;
-    background-color: #F4CE6A;
+    background-color: #6af4ac;
+    /* background-color: #F4CE6A; */
     /* background-color: #d0e81a; */
     padding: 10px 0 0 0;
     display: flex;
@@ -122,9 +144,18 @@ body {
     max-width: 100%;
 }
 
+/* -------------------------------------------------------------- */
+/* -------------- Banner Section Styling Ends Here -------------- */
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------- */
+/* -------------- More Info Section Styling Starts Here -------------- */
+/* ------------------------------------------------------------------- */
 .more-info-section {
     height: 500px;
     width: 100%;
+    background-color: #6af4ac;
     /* background-color: #e81a69; */
     display: flex;
     flex-direction: row;
@@ -132,31 +163,44 @@ body {
     align-items: center;
 }
 
+/* ------------------------------------------------------------------------ */
+/* -------------- More Info Left-Section Styling Starts Here -------------- */
+/* ------------------------------------------------------------------------ */
+
 .more-info-section .left-section {
     height: 500px;
     width: 50vw;
     /* background-color: #CAD5E2; */
     /* background-color: #ae1ae8; */
-    background-color: #242B2E;
+    /* background-color: #6af4ac; */
+    /* background-color: #242B2E; */
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-    padding: 10px 0 0 0;
-    border-right: 2px solid #ffffff;
+    /* padding: 10px 0 0 0; */
+    border-right: 4px solid #000000;
+    /* border-right: 2px solid #ffffff; */
 }
 
 .more-info-section .left-section h1 {
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    font-size: 4rem;
+    font-size: 30px;
     font-weight: 500;
     color: #DDD101;
 }
 
+.more-info-section .left-section .left-section-header {
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    border-right: none;
+}
+
 .car-details {
     margin: 28px 0 0 0;
-    border: 3px solid #ffffff;
+    border: 3px solid #000000;
     padding: 30px;
 }
 
@@ -236,9 +280,10 @@ body {
 .car-details label {
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 700;
     /* color: #E03B8B; */
-    color: #0af02c;
+    /* color: #0af02c; */
+    color: #000000;
 }
 
 .car-details select,input {
@@ -265,7 +310,7 @@ body {
 .search-button button {
     padding: 5px 12px;
     font-size: 18px;
-    border: 4px solid #20b2aa;
+    border: 3px solid #000000;
     border-radius: 5px;
     text-align: center;
     font-weight: 900;
@@ -275,28 +320,44 @@ body {
     cursor: pointer;
     background-color: #000000;
     color: #ffffff;
+    border: 3px solid #DDD12C;
     font-weight: 700;
 }
+
+/* ---------------------------------------------------------------------- */
+/* -------------- More Info Left-Section Styling Ends Here -------------- */
+/* ---------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------- */
+/* -------------- More Info Right-Section Styling Starts Here -------------- */
+/* ------------------------------------------------------------------------- */
 
 .more-info-section .right-section {
     height: 500px;
     width: 50vw;
     /* background-color: #1ae8b8; */
-    background-color: #242B2E;
+    /* background-color: #242B2E; */
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-    padding: 10px 0 0 0;
+    /* padding: 10px 0 0 0; */
     
 }
 
 .more-info-section .right-section h1 {
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    font-size: 4rem;
+    font-size: 30px;
     font-weight: 500;
     color: #DDD101;
+}
+
+.more-info-section .right-section .right-section-header {
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 .popular-destinations{
@@ -319,23 +380,140 @@ body {
     background-color: #0af02c;
 }
 
-/* @media screen and (max-width: 975px) and (min-width: 817px) { */
-@media screen and (max-width: 1197px) {
-    body{
-        /* background: #000; */
-    }
+/* ----------------------------------------------------------------------- */
+/* -------------- More Info Right-Section Styling Ends Here -------------- */
+/* ----------------------------------------------------------------------- */
 
-    
+/* ----------------------------------------------------------------- */
+/* -------------- More Info Section Styling Ends Here -------------- */
+/* ----------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------ */
+/* -------------- About Us Section Styling Starts Here -------------- */
+/* ------------------------------------------------------------------ */
+
+.about-us-section {
+    width: 100%;
+    height: auto;
+    background-color: #6BF4AC;
 }
+
+.about-us-header {
+    width: 100%;
+    background-color: #000000;
+    color: #DDD101;
+    font-family: 'Poppins',sans-serif;
+}
+
+.about-us-header h1 {
+    text-align: center;
+    font-size: 5rem;
+}
+.about-us-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    /* background-color: #08e393; */
+}
+
+.company-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 430px;
+    background-color: #6BF4AC;
+    /* background-color: #242B2E; */
+    padding: 10px 0;
+}
+
+.company-logo img {
+    height: auto;
+    max-width: 100%;
+    /* margin: 10px 0 10px 0; */
+    width: 50%;
+    clip-path: circle(50% at 50% 50%);
+    border: 4px solid #000000;
+    border-radius: 500px;
+}
+
+.team-members {
+    width: 50vw;
+    height: 500px;
+    /* height: auto; */
+    background-color: #6BF4AC;
+    border-left: 4px solid #000000;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+.team-members > h1 {
+    text-align: center;
+    font-size: 5rem;
+
+}
+
+.team-member-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 0 10px 10px;
+}
+
+.team-member-list h1 {
+    margin: 31px 0 14px 15px;
+    font-size: 40px;
+    color: #0011ff;
+    font-family: 'Robboto',sans-serif;
+}
+
+.team-member-list p {
+    margin: 0 25px 0 52px;
+    font-size: 12px;
+}
+
+.team-member-header {
+    width: 100%;
+    justify-self: flex-start;
+    background-color: #DDD101;
+    /* padding-top: 10px; */
+    color: #000000;
+}
+
+.team-member-header h1 {
+    text-align: center;
+    font-size: 50px;
+    border-bottom: 4px solid #000000;
+}
+
+.team-member-3 {
+    margin-bottom: 10px;
+}
+
+
+
+
+/* ---------------------------------------------------------------- */
+/* -------------- About Us Section Styling Ends Here -------------- */
+/* ---------------------------------------------------------------- */
+
+
+/* --------------------------------------------------------------- */
+/* -------------- Media Queries Section Starts Here -------------- */
+/* --------------------------------------------------------------- */
 
 @media screen and (max-width: 1135px) {
     .more-info-section .left-section h1 {
         margin: 0 10px;
         padding: 0 8px;
-        background-color: #1adc12;
-        color: #fc0000;
-        font-size: 3.5rem;
-        font-weight: 700;
+        /* background-color: #1adc12; */
+        /* color: #fc0000; */
+        /* font-weight: 700; */
     }
 
     .nav-bar-container {
@@ -356,9 +534,6 @@ body {
 }
 
 @media screen and (max-width: 975px) {
-    body{
-        /* background: #000; */
-    }
 
     .nav-bar-container {
         height: 100px;
@@ -377,12 +552,12 @@ body {
     }
 
     .more-info-section .left-section h1 {
-        font-size: 3.2rem;
+        /* font-size: 3.2rem; */
         margin: 0 10px;
         padding: 0 5px;
-        background-color: #1adc12;
-        color: #fc0000;
-        font-weight: 700;
+        /* background-color: #1adc12; */
+        /* color: #fc0000; */
+        /* font-weight: 700; */
     }
 
     .more-info-section .car-details {
@@ -393,6 +568,23 @@ body {
         height: auto;
         width: 100%;
         padding-bottom: 20px;
+    }
+
+    .about-us-container {
+        flex-direction: column;
+    }
+
+    .company-logo {
+        align-items: flex-start;
+    }
+    .company-logo img {
+        width: 80%;
+    }
+
+    .team-members {
+        width: 100%;
+        border: none;
+        margin-top: -60px;
     }
 }
 
@@ -433,7 +625,6 @@ body {
     }
 }
 
-/* @media screen and (max-width: 585px) { */
 @media screen and (max-width: 596px) {
     .nav-bar-container .nav-menu-items nav li {
         font-size: 1.3rem; 
@@ -451,9 +642,6 @@ body {
 
 @media screen and (max-width: 537px) {
 
-    /* .nav-bar-container {
-        flex-wrap: nowrap;
-    } */
     .nav-bar-container .nav-menu-items {
         display: none;
     }
@@ -525,7 +713,7 @@ body {
 
     .more-info-section .right-section h1 {
         font-size: 18px;
-        text-decoration: underline red;
+        /* text-decoration: underline red; */
     }
 
     .more-info-section .right-section .popular-destinations span {
@@ -533,4 +721,7 @@ body {
     }
 }
 
+/* ------------------------------------------------------------- */
+/* -------------- Media Queries Section Ends Here -------------- */
+/* ------------------------------------------------------------- */
 

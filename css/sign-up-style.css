@@ -164,6 +164,11 @@ input[type=text], input[type=email], input[type=password] {
     color: #ffffff;
 }
 
+.signup-button button a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .signup-button button:hover {
     cursor: pointer;
     background-color: #fff;
