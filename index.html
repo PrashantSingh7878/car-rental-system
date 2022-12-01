@@ -39,7 +39,8 @@
         <div class="banner-section">
             <h1>Car Hire - Search, Compare & Save</h1>
             <div class="banner-img">
-                <img src="/images/banner-img.jpg" alt="">
+                <img class="mySlides" src="/images/banner-img.jpg" alt="">
+                <img class="mySlides" src="/images/car-background-img.jpeg" alt="">
             </div>
 
         </div>
@@ -120,19 +121,22 @@
                     <div class="team-member-header">
                         <h1>Our Team</h1>
                     </div>
-                    
+
                     <div class="team-member-list">
                         <div class="team-member-1">
                             <h1>- Anjan Ku. Sahoo</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea possimus veniam odio dolor, quas officia repellat beatae quae inventore iusto ab eum quo odit quod est.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea possimus veniam odio dolor,
+                                quas officia repellat beatae quae inventore iusto ab eum quo odit quod est.</p>
                         </div>
                         <div class="team-member-2">
                             <h1>- Prashant Singh</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea possimus veniam odio dolor, quas officia repellat beatae quae inventore iusto ab eum quo odit quod est.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea possimus veniam odio dolor,
+                                quas officia repellat beatae quae inventore iusto ab eum quo odit quod est.</p>
                         </div>
                         <div class="team-member-3">
                             <h1>- Jhea Jaideep</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea possimus veniam odio dolor, quas officia repellat beatae quae inventore iusto ab eum quo odit quod est.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea possimus veniam odio dolor,
+                                quas officia repellat beatae quae inventore iusto ab eum quo odit quod est.</p>
                         </div>
                     </div>
 
@@ -152,6 +156,22 @@
             </div>
         </div>
     </div>
+    <script>
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) { slideIndex = 1 }
+            x[slideIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
 </body>
 
 </html>
